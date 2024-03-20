@@ -1,0 +1,28 @@
+<IfModule mod_rewrite.c>
+        Options -Indexes
+        RewriteEngine on
+        # SecFilterEngine Off
+        # SecFilterScanPOST Off
+        DirectoryIndex index.php
+        RewriteCond %{REQUEST_FILENAME} !-f
+        RewriteCond %{REQUEST_FILENAME} !-d
+        RewriteRule ^(.*)$ index.php/$1 [L]
+        
+        # RewriteCond %{HTTPS} off
+        # First rewrite to HTTPS:
+        # Don't put www. here. If it is already there it will be included, if not
+        # the subsequent rule will catch it.
+        # RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+        # Now, rewrite any request to the wrong domain to use www.
+        # [NC] is a case-insensitive match
+        
+        Header always append X-Frame-Options SAMEORIGIN
+</IfModule>
+
+<IfModule mod_rewrite.c> 
+  php_value memory_limit 256M 
+</IfModule>
+
+<IfModule !mod_rewrite.c>
+        ErrorDocument 404 /not_found
+</IfModule>

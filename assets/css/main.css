@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+@-ms-viewport{
+    width: device-width;
+}
+
+:root{
+    --primary-color:#16698a;
+    --navbar:#fff;
+    --color:#333;
+}
+
+html,body{
+    scroll-behavior: smooth;
+    background: #f5f5f5;
+    font-weight: 500 !important;
+    font-family: 'Nunito', sans-serif;
+    color:var(--color);
+    font-size: 12pt;
+}
+label{
+    font-weight: 600;
+}
+
+.header{
+    background:var(--primary-color);
+    padding-top:1pc;
+    padding-bottom: 1pc;   
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: var(--navbar);
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color:#333;
+    font-weight: 600;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color:#333;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color:#333;
+}
+
+.navbar .dropdown-menu {
+    background: var(--navbar);
+    border-radius: 0px;
+}
+
+.navbar.active .dropdown-menu {
+    background: var(--navbar);
+    border-radius: 0px;
+}
+
+.navbar.active .dropdown-item {
+    color:#333;
+    font-weight: 600;
+}
+
+.navbar.active .dropdown-item:hover,
+.navbar.active .dropdown-item:focus {
+    color: #fff;
+    background: var(--primary-color);
+}
+
+.navbar-toggler {
+    color:#333;
+}
+
+/** Background **/
+.bg-primary{
+    background-color: #0c4e68 !important;
+}
+.bg-success{
+    background-color: #47993a !important;
+}
+.bg-danger{
+    background-color: #d12c24 !important;
+}
+/** text color **/
+.text-primary{
+    color: #0c4e68 !important;
+}
+.text-success{
+    color: #47993a !important;
+}
+.text-danger{
+    color: #d12c24 !important;
+}
+/* button */
+.btn-primary{
+    background-color: #0c4e68 !important;
+    border: 0px;
+}
+.btn-primary:hover{
+    background-color: #136788 !important;
+    border: 0px;
+}
+.btn-success{
+    background-color: #47993a !important;
+    border: 0px;
+}
+.btn-success:hover{
+    background-color: #52b842 !important;
+    border: 0px;
+}
+.btn-danger{
+    background-color: #d12c24 !important;
+    border: 0px;
+}
+.btn-danger:hover{
+    background-color: #e23930 !important;
+    border: 0px;
+}
+
+.card-rounded{
+    border-radius:8px !important;
+    box-shadow: 1px 7px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-header{
+    border-radius:8px 8px 0px 0px !important;
+    font-weight: 700 !important;
+}
+
+.card-rounded:hover{
+    border-radius:8px !important;
+    box-shadow: 2px 10px 55px rgba(0, 0, 0, 0.1);
+}
+
+.card-rounded-back{
+    border-radius:10px;
+    box-shadow: 0px 0px 15px var(--primary-color);
+}
+
+.btn{
+    font-weight: 700 !important;
+}
+
+#portfolio .portfolio-item img {
+    transition: all ease-in-out 0.4s;
+}
+
+#portfolio .portfolio-item:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.aTable{
+    width:100%;
+}
+
+.aTable tr td{
+    padding-left:10px;
+    padding-bottom:10px;
+}
+.bTable tr td{
+    padding-left:5px;
+    padding-bottom:5px;
+}
+
+#portfolio .portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#portfolio .portfolio-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#gambar{
+    height:200px;
+}
+
+.footer-second{
+    margin-top:4pc;
+    background: #0c4e68;
+    padding-top:1pc;
+    padding-bottom:1pc;
+    text-align:center;
+    color:#fff;
+}
+.kr_sub{
+    width:50%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+}
+.kr_sub1{
+    width:50%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+}
+.row-css{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-50{
+    flex: 0 1 calc(25% - 5px);
+    margin-bottom: 2px;
+    padding:0px;
+    margin-right:1px;
+    clear: both;
+    margin-top: 1pc;
+}
+#KeranjangAdd{
+    height:287px;overflow-y:scroll;
+}
+/*---------- MEDIA 991px ----------*/
+@media (max-width: 991px) {
+    .kr_sub{
+        width:50%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+    .kr_sub1{
+        width:80%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+}
+  /*---------- MEDIA 768px ----------*/
+@media  (max-width: 768px) {
+    .kr_sub{
+        width:50%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+    .kr_sub1{
+        width:80%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+    #kasircontainer{
+        padding-left:5px !important;
+        padding-right:5px !important;
+        overflow-x: hidden;
+    }
+}
+ /*---------- MEDIA 480px ----------*/
+@media  (max-width: 480px) {
+    .kr_sub{
+        width:50%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+    .kr_sub1{
+        width:100%;border:1px solid #ddd;border-radius:4px;height:32px;padding-left:5px;
+    }
+    #kasircontainer{
+        padding-left:5px !important;
+        padding-right:5px !important;
+        overflow-x: hidden;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 670px) {
+
+    .row-css {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .col-50{
+        flex: 0 1 calc(33% - 5px);
+        margin-bottom: 2px;
+        padding:0px;
+        margin-right:1px;
+        clear: both;
+        margin-top: 2px;
+        font-size:8pt;
+        text-align:center;
+    }
+
+    .btn-menu{
+        font-size:8pt;
+        padding:1px;
+    }
+
+    #KeranjangAdd{
+        height:auto;
+    }
+  
+  }
+  
+  /* Tablet */
+  @media only screen and (min-width: 671px) and (max-width: 960px) {
+  
+    .row-css {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+  
+    .col-50{
+        flex: 0 1 calc(50% - 5px);
+        margin-bottom: 2px;
+        padding:0px;
+        clear: both;
+        margin-top: 0.5pc;
+    }
+  
+  }
+  
+  /* Desktop  */
+  @media only screen and (min-width: 961px) {
+  
+  }

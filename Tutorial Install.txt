@@ -1,0 +1,12 @@
+Tutorial Install Source code POS Cafe Berbasis Website
+
+1. Download dan Install XAMPP di komputer anda
+2. Ekstrak file pos_cafe.zip yang sudah di berikan dengan Winrar atau sejenisnya
+3. Copy folder pos_cafe, lalu paste ke folder htdocs 
+4. Aktifkan Apache2 dan MySQL pada XAMPP di komputer anda
+5. Buka browser anda dan buka url http://localhost/phpmyadmin 
+6. Buat database baru dengan nama pos_cafev2
+7. Import database aplikasi di folder pos_cafe/database sql/pos_cafev2.sql
+8. Buka browser anda dan buka url http://localhost/pos_cafe/
+9. Login dengan username adminakasir dan password secret sebagai level admin
+10. Selesai

@@ -1,0 +1,46 @@
+
+/** Background **/
+.bg-primary{
+    background-color: #0c4e68 !important;
+}
+.bg-success{
+    background-color: #47993a !important;
+}
+.bg-danger{
+    background-color: #d12c24 !important;
+}
+/** text color **/
+.text-primary{
+    color: #0c4e68 !important;
+}
+.text-success{
+    color: #47993a !important;
+}
+.text-danger{
+    color: #d12c24 !important;
+}
+/* button */
+.btn-primary{
+    background-color: #0c4e68 !important;
+    border: 0px;
+}
+.btn-primary:hover{
+    background-color: #136788 !important;
+    border: 0px;
+}
+.btn-success{
+    background-color: #47993a !important;
+    border: 0px;
+}
+.btn-success:hover{
+    background-color: #52b842 !important;
+    border: 0px;
+}
+.btn-danger{
+    background-color: #d12c24 !important;
+    border: 0px;
+}
+.btn-danger:hover{
+    background-color: #e23930 !important;
+    border: 0px;
+}
